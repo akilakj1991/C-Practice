@@ -8,7 +8,7 @@ int main() {
    printf("I am currently live in New Zealand\n");
    printf("Please say your name?\n");
    scanf("%s", name);
-   printf("Hello %s.", name);
+   printf("Hello %s.\n", name);
    printf("How old are you?\n");
    scanf("%d", age);
    printf("Wow I cannot believe you are %d", age);
