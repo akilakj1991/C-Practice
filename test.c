@@ -11,6 +11,6 @@ int main() {
    printf("Hello %s.\n", name);
    printf("How old are you?\n");
    scanf("%d", age);
-   printf("Wow I cannot believe you are %d", age);
+   printf("Wow I cannot believe you are %d\n", age);
    return 0;
 }
