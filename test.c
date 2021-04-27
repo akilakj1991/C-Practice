@@ -3,6 +3,7 @@ char name[80];
 char country[80];
 char original_country[80];
 char university[80];
+char uni_add[80];
 int age;
 int main() {
    printf("Hello, World!\n");
@@ -14,11 +15,14 @@ int main() {
    printf("Hello %s.\n", name);
    printf("How old are you?\n");
    scanf("%d", &age);
-   printf("Wow I cannot believe you are %d\nWhere are you from?", age);
+   printf("Wow I cannot believe you are %d\nWhere are you from?\n", age);
    scanf("%s", country);
    printf("Wow, %s is a beautiful country\n Where were you born?\n", country);
    scanf("%s", original_country);
    printf("Wow, %s is also a beautiful country\nWhere did you study?\n ", original_country);
+   scanf("%s", university);
    printf("Where is %s located at?\n", university);
+   scanf("%s", uni_add);
+   printf("Wow that area is nice too\n");
    return 0;
 }
