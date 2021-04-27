@@ -10,7 +10,7 @@ int main() {
    scanf("%s", name);
    printf("Hello %s.\n", name);
    printf("How old are you?\n");
-   scanf("%d", age);
+   scanf("%d", &age);
    printf("Wow I cannot believe you are %d\n", age);
    return 0;
 }
