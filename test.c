@@ -17,7 +17,7 @@ int main() {
    scanf("%d", &age);
    printf("Wow I cannot believe you are %d\nWhere are you from?\n", age);
    scanf("%s", country);
-   printf("Wow, %s is a beautiful country\n Where were you born?\n", country);
+   printf("Wow, %s is a beautiful country\nWhere were you born?\n", country);
    scanf("%s", original_country);
    printf("Wow, %s is also a beautiful country\nWhere did you study?\n", original_country);
    scanf("%s", university);
