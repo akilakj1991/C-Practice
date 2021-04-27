@@ -1,6 +1,6 @@
 #include <stdio.h>
 char name[80];
-int i;
+int age;
 int main() {
    printf("Hello, World!\n");
    printf("My Name is Akila Jayawardena\n");
@@ -8,7 +8,9 @@ int main() {
    printf("I am currently live in New Zealand\n");
    printf("Please say your name?\n");
    scanf("%s", name);
-   printf("Your name is %s.", name);
+   printf("Hello %s.", name);
    printf("How old are you?\n");
+   scanf("%d", age);
+   printf("Wow I cannot believe you are %d", age);
    return 0;
 }
