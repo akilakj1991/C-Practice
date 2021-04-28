@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 char name[80];
 char country[80];
 char original_country[80];
