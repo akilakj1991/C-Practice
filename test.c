@@ -17,7 +17,7 @@ int main() {
    gets(name);
    printf("Hello %s.\n", name);
    printf("How old are you?\n");
-   scanf("%d", age);
+   scanf("%d", &age);
    printf("Wow I cannot believe you are %d.\nWhere are you from?\n", age);
    gets(country);
    printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country);
