@@ -26,4 +26,3 @@ int main() {
    printf("Wow that area is nice too\n");
    return 0;
 }
-
