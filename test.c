@@ -2,10 +2,10 @@
 #include <string.h>
 #include <stdlib.h>
 
-char name[80];
-char country[80];
-char original_country[80];
-char university[80];
+char name1[10], name2[10];
+char country1[10], country2[10];
+char original_country1[80], original_country2[10];
+char university1[10], university2[10];
 char uni_add[80];
 int age;
 int main() {
@@ -14,18 +14,32 @@ int main() {
    printf("From Sri Lanka and 28 years old.\n");
    printf("I am currently live in New Zealand.\n");
    printf("Please say your name?\n");
-   scanf("%s", &name);
-   printf("Hello %s.\n", name);
+   scanf("%s %s", name1, name2);
+   printf("Hello %s.\n", name1);
    printf("How old are you?\n");
    scanf("%d", &age);
    printf("Wow I cannot believe you are %d.\nWhere are you from?\n", age);
-   scanf("%s", &country);
-   printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country);
-   scanf("%s", &original_country);
-   printf("Wow, %s is also a beautiful country.\nWhere did you study?\n", original_country);
-   scanf("%s", &university);
-   printf("Where is %s located at?\n", university);
-   scanf("%s", &uni_add);
+   scanf("%s", country1, country2);
+   if(strlen(country2) == 0)
+   {
+      printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country1);
+   }
+   else
+   {
+      printf("Wow, %s %s is a beautiful country.\nWhere were you born?\n", country1, country2);
+   }
+   scanf("%s", original_country1, original_country2);
+   if(strlen(original_country2) == 0)
+   {
+      printf("Wow, %s is a beautiful country.\nWhich universty did you study?", original_country1);
+   }
+   else
+   {
+      printf("Wow, %s %s is a beautiful country.\nWhich university did you study?\n", original_country1, original_country2);
+   }
+   scanf("%s %s", university1, university2);
+   printf("Where is %s %s located at?\n", university1, university2);
+   scanf("%s", uni_add);
    printf("Wow that area is nice too.\n");
    return 0;
 }
