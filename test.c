@@ -28,7 +28,7 @@ int main() {
    {
       printf("Wow, %s %s is a beautiful country.\nWhere were you born?\n", country1, country2);
    }
-   scanf("%s", original_country1, original_country2);
+   scanf("%s %s", original_country1, original_country2);
    if(strlen(original_country2) == 0)
    {
       printf("Wow, %s is a beautiful country.\nWhich universty did you study?\n", original_country1);
