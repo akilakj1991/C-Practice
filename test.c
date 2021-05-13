@@ -14,18 +14,18 @@ int main() {
    printf("From Sri Lanka and 28 years old.\n");
    printf("I am currently live in New Zealand.\n");
    printf("Please say your name?\n");
-   gets(name);
+   scanf("%s", name);
    printf("Hello %s.\n", name);
    printf("How old are you?\n");
    scanf("%d", &age);
    printf("Wow I cannot believe you are %d.\nWhere are you from?\n", age);
-   gets(country);
+   scanf("%s", country);
    printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country);
-   gets(original_country);
+   scanf("%s", original_country);
    printf("Wow, %s is also a beautiful country.\nWhere did you study?\n", original_country);
-   gets(university);
+   scanf("%s", university);
    printf("Where is %s located at?\n", university);
-   gets(uni_add);
+   scanf("%s", uni_add);
    printf("Wow that area is nice too.\n");
    return 0;
 }
