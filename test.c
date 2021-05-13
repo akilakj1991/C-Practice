@@ -31,7 +31,7 @@ int main() {
    scanf("%s", original_country1, original_country2);
    if(strlen(original_country2) == 0)
    {
-      printf("Wow, %s is a beautiful country.\nWhich universty did you study?", original_country1);
+      printf("Wow, %s is a beautiful country.\nWhich universty did you study?\n", original_country1);
    }
    else
    {
