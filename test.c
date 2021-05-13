@@ -13,7 +13,7 @@ int main() {
    printf("My Name is Akila Jayawardena.\n");
    printf("From Sri Lanka and 28 years old.\n");
    printf("I am currently live in New Zealand.\n");
-   printf("Please say your name?\n");
+   printf("Please enter your first name and family name?\n");
    scanf("%s %s", name1, name2);
    printf("Hello %s.\n", name1);
    printf("How old are you?\n");
@@ -31,11 +31,11 @@ int main() {
    scanf("%s %s", original_country1, original_country2);
    if(strlen(original_country2) == 0)
    {
-      printf("Wow, %s is a beautiful country.\nWhich universty did you study?\n", original_country1);
+      printf("Wow, %s is a beautiful country too.\nWhich universty did you study?\n", original_country1);
    }
    else
    {
-      printf("Wow, %s %s is a beautiful country.\nWhich university did you study?\n", original_country1, original_country2);
+      printf("Wow, %s %s is a beautiful country too.\nWhich university did you study?\n", original_country1, original_country2);
    }
    scanf("%s %s", university1, university2);
    printf("Where is %s %s located at?\n", university1, university2);
