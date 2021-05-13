@@ -8,11 +8,11 @@ char original_country1[80], original_country2[10];
 char university1[10], university2[10];
 char uni_add[80];
 int age;
+
+//int calc();
+
 int main() {
-   printf("Hello, World!\n");
-   printf("My Name is Akila Jayawardena.\n");
-   printf("From Sri Lanka and 28 years old.\n");
-   printf("I am currently live in New Zealand.\n");
+   printf("Hello, my Name is Akila Jayawardena and I am from Sri Lanka and 28 years old. I am currently live in New Zealand.\n");
    printf("Please enter your first name and family name?\n");
    scanf("%s %s", name1, name2);
    printf("Hello %s.\n", name1);
@@ -43,3 +43,7 @@ int main() {
    printf("Wow that area is nice too.\n");
    return 0;
 }
+
+/*int clac(){
+
+}*/
