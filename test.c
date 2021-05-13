@@ -9,7 +9,7 @@ char university1[10], university2[10];
 char uni_add[80];
 int age;
 
-//int calc();
+//int calc(int num1, int num2);
 
 int main() {
    printf("Hello, my Name is Akila Jayawardena and I am from Sri Lanka and 28 years old. I am currently live in New Zealand.\n");
@@ -44,6 +44,13 @@ int main() {
    return 0;
 }
 
-/*int clac(){
-
+/*int clac(int num1, int num2){
+   int result;
+ 
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result;
 }*/
