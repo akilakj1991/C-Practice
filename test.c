@@ -16,28 +16,30 @@ int main() {
    printf("Hello, my Name is Akila Jayawardena and I am from Sri Lanka and 28 years old. I am currently live in New Zealand.\n");
    printf("Please enter your first name and family name?\n");
    scanf("%s %s", name1, name2);
-   printf("Hello!! %s\n.", name1);
+   printf("Hello!! %s.\n", name1);
    printf("How old are you?\n");
    scanf("%d", &age);
    printf("Wow I cannot believe you are %d.\nWhere are you from?\n", age);
    fgets(country1, 40, stdin);
-   if(strlen(country2) == 0)
+   printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country1);
+   /*if(strlen(country2) == 0)
    {
       printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country1);
    }
    else
    {
       printf("Wow, %s %s is a beautiful country.\nWhere were you born?\n", country1, country2);
-   }
+   }*/
    fgets(original_country1, 40, stdin);
    if(strlen(original_country2) == 0)
-   {
+   /*{
       printf("Wow, %s is a beautiful country too.\nWhich universty did you study?\n", original_country1);
    }
    else
    {
       printf("Wow, %s %s is a beautiful country too.\nWhich university did you study?\n", original_country1, original_country2);
-   }
+   }*/
+   printf("Wow, %s is a beautiful country too.\nWhich universty did you study?\n", original_country1);
    scanf("%s %s", university1, university2);
    printf("Where is %s %s located at?\n", university1, university2);
    scanf("%s", uni_add);
