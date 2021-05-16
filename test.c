@@ -20,11 +20,11 @@ int main() {
    printf("How old are you?\n");
    scanf("%d", &age);
    printf("Wow I cannot believe you are %d.\nWhere are you from?\n", age);
-   gets(country1);
-   fgets(country1,40,stdin);
+   scanf("%s", country1);
+   fgets(country1,10,stdin);
    printf("Wow, %sis a beautiful country.\nWhere were you born?\n", country1);
-   gets(original_country1);
-   fgets(original_country1,40,stdin);
+   scanf("%s", original_country1);
+   fgets(original_country1,10,stdin);
    /*if(strlen(country2) == 0)
    {
       printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country1);
