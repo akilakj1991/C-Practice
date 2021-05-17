@@ -18,7 +18,7 @@ int main() {
    scanf("%[^\n]", name1);
    printf("Hello!! %s.\n", name1);
    printf("How old are you?\n");
-   scanf("%d", age);
+   scanf("%d", &age);
    printf("Wow I cannot believe you are %d.\nWhere are you from?\n", age);
    scanf("%[^\n]", country1);
    /*scanf("%s", country2);
