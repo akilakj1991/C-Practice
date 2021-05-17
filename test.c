@@ -39,26 +39,25 @@ int main() {
    int number1, number2, number3;
    float number4;
    scanf("%d", &number1);
-   printf(" ");
    scanf("%d", &number2);
-   printf("do you want to add[+]/substract[-]/divide[/]/multiply[X] those numbers:\n");
+   printf("Do you want to add[+]/substract[-]/divide[/]/multiply[X] those numbers:\n");
    scanf("%s", temp1);
-   if(temp1 == "add" || temp1 == "+")
+   if(temp1 == "add")
    {
       number3 = add(number1, number2);
       printf("The value is %d", number3);
    } 
-   else if(temp1 == "substract" || temp1 == "-")
+   else if(temp1 == "substract")
    {
       number3 = sub(number1, number2);
       printf("The value is %d", number3);
    }
-   else if(temp1 == "divide" || temp1 == "/")
+   else if(temp1 == "divide")
    {
       number4 = dvd(number1, number2);
       printf("The value is %f", number4);
    }
-   else if(temp1 == "multiply" || temp1 == "X")
+   else if(temp1 == "multiply")
    {
       number3 = mpl(number1, number2);
       printf("The value is %d", number3);
