@@ -15,17 +15,13 @@ char temp1, temp2, temp3, temp4;
 int main() {
    printf("Hello, my Name is Akila Jayawardena and I am from Sri Lanka and 28 years old. I am currently live in New Zealand.\n");
    printf("Please enter your first name and family name?\n");
-   scanf("%s %s", name1, name2);
+   scanf("%[^\n]", name1);
    printf("Hello!! %s.\n", name1);
    printf("How old are you?\n");
    scanf("%d", &age);
    printf("Wow I cannot believe you are %d.\nWhere are you from?\n", age);
    scanf("%s", country1);
    scanf("%s", country2);
-   //fgets(country1,40,stdin);
-   //printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country1);
-   //scanf("%s", original_country1);
-   //fgets(original_country1,40,stdin);
    if(strlen(country2) == 0)
    {
       printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country1);
