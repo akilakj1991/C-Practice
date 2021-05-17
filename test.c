@@ -46,22 +46,22 @@ int main() {
    scanf("%d", &number2);
    printf("Do you want to add[+]/substract[-]/divide[/]/multiply[X] those numbers:\n");
    scanf("%s", temp1);
-   if((strcmp(temp1,tem1) == 0) || (strcmp(temp1,'+') == 0))
+   if(strcmp(temp1,tem1) == 0)
    {
       number3 = add(number1, number2);
       printf("The value is %d", number3);
    } 
-   else if((strcmp(temp1,tem2) == 0) || (strcmp(temp1,'-') == 0))
+   else if(strcmp(temp1,tem2) == 0)
    {
       number3 = sub(number1, number2);
       printf("The value is %d", number3);
    }
-   else if((strcmp(temp1,tem3) == 0) || (strcmp(temp1,'/') == 0))
+   else if(strcmp(temp1,tem3) == 0)
    {
       number4 = dvd(number1, number2);
       printf("The value is %f", number4);
    }
-   else if((strcmp(temp1,tem4) == 0) || (strcmp(temp1,'*') == 0))
+   else if(strcmp(temp1,tem4) == 0)
    {
       number3 = mpl(number1, number2);
       printf("The value is %d", number3);
