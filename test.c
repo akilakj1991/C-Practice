@@ -5,7 +5,7 @@
 char name1[10], name2[10];
 char country1[10]; 
 char original_country1[10];
-char university1[10];
+char university1[80];
 char uni_add[80];
 int age;
 char temp1, temp2, temp3, temp4;
