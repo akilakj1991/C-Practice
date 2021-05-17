@@ -49,22 +49,22 @@ int main() {
    if(strcmp(temp1,tem1) == 0)
    {
       number3 = add(number1, number2);
-      printf("The value is %d", number3);
+      printf("The value is %d ", number3);
    } 
    else if(strcmp(temp1,tem2) == 0)
    {
       number3 = sub(number1, number2);
-      printf("The value is %d", number3);
+      printf("The value is %d ", number3);
    }
    else if(strcmp(temp1,tem3) == 0)
    {
       number4 = dvd(number1, number2);
-      printf("The value is %f", number4);
+      printf("The value is %.2f ", number4);
    }
    else if(strcmp(temp1,tem4) == 0)
    {
       number3 = mpl(number1, number2);
-      printf("The value is %d", number3);
+      printf("The value is %d ", number3);
    }
    return 0;
 }
