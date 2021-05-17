@@ -44,7 +44,7 @@ int main() {
    float number4;
    scanf("%d", &number1);
    scanf("%d", &number2);
-   printf("Do you want to add[+]/substract[-]/divide[/]/multiply[X] those numbers:\n");
+   printf("Do you want to add[+] or substract[-] or divide[/] or multiply[X] those numbers:\n");
    scanf("%s", temp1);
    if(strcmp(temp1,tem1) == 0)
    {
