@@ -8,7 +8,11 @@ char original_country1[10];
 char university1[80];
 char uni_add[80];
 int age;
-char temp1[10], temp2[10], temp3[10], temp4[10];
+char temp1[10];
+char tem1[10] = "add";
+char tem2[10] = "substract";
+char tem3[10] = "divide";
+char tem4[10] = "multiply";
 
 int add(int num1, int num2);
 int sub(int num1, int num2);
@@ -42,22 +46,22 @@ int main() {
    scanf("%d", &number2);
    printf("Do you want to add[+]/substract[-]/divide[/]/multiply[X] those numbers:\n");
    scanf("%s", temp1);
-   if(temp1 == "add")
+   if((strcmp(temp1,tem1) == 0) || (strcmp(temp1,'+') == 0))
    {
       number3 = add(number1, number2);
       printf("The value is %d", number3);
    } 
-   else if(temp1 == "substract")
+   else if((strcmp(temp1,tem2) == 0) || (strcmp(temp1,'-') == 0))
    {
       number3 = sub(number1, number2);
       printf("The value is %d", number3);
    }
-   else if(temp1 == "divide")
+   else if((strcmp(temp1,tem3) == 0) || (strcmp(temp1,'/') == 0))
    {
       number4 = dvd(number1, number2);
       printf("The value is %f", number4);
    }
-   else if(temp1 == "multiply")
+   else if((strcmp(temp1,tem4) == 0) || (strcmp(temp1,'*') == 0))
    {
       number3 = mpl(number1, number2);
       printf("The value is %d", number3);
