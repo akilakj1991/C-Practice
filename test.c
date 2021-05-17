@@ -8,9 +8,12 @@ char original_country1[10];
 char university1[80];
 char uni_add[80];
 int age;
-char temp1, temp2, temp3, temp4;
+char temp1[10], temp2[10], temp3[10], temp4[10];
 
-//int calc(int num1, int num2);
+int add(int num1, int num2);
+int sub(int num1, int num2);
+float dvd(int num1, int num2);
+int mpl(int num1, int num2);
 
 int main() {
    printf("Hello, my Name is Akila Jayawardena and I am from Sri Lanka and 28 years old. I am currently live in New Zealand.\n");
@@ -31,17 +34,57 @@ int main() {
    printf("Where is %s located at?\n", university1);
    fflush(stdin);
    scanf("%[^\n]s", uni_add);
-   printf("Wow that area is nice too.\n");
+   printf("Wow that area is nice too.\nGive me two numbers");
+   int number1, number2;
+   int return1;
+   float return0;
+   scanf("%d %d", &number1, &number2);
+   printf("do you want to add[+]/substract[-]/divide[/]/multiply[x] those numbers");
+   scanf("%s", temp1);
+   if(temp1 == "add" || temp1 == "+")
+   {
+      return1 = add(number1, number2);
+      printf("The value is %d", return1);
+   } 
+   else if(temp1 == "substract" || temp1 == "-")
+   {
+      return1 = sub(number1, number2);
+      printf("The value is %d", return1);
+   }
+   else if(temp1 == "divide" || temp1 == "/")
+   {
+      return0 = dvd(number1, number2);
+      printf("The value is %f", return0);
+   }
+   else if(temp1 == "multiple" || temp1 == "x");
+   {
+      return1 = mpl(number1, number2);
+      printf("The value is %d", return1);
+   }
    return 0;
 }
 
-/*int clac(int num1, int num2){
+int add(int num1, int num2){
    int result;
- 
-   if (num1 > num2)
-      result = num1;
-   else
-      result = num2;
- 
+   result = num1+num2;
    return result;
-}*/
+}
+int sub(int num1, int num2)
+{
+   int result;
+   result = num1-num2;
+   return result;
+}
+float dvd(int num1, int num2)
+{
+   float result;
+   result = num1 / num2;
+   return result;
+}
+
+int mpl(int num1, int num2)
+{
+   int result;
+   result = num1 * num2;
+   return result;
+}
