@@ -34,12 +34,12 @@ int main() {
    printf("Where is %s located at?\n", university1);
    fflush(stdin);
    scanf("%[^\n]s", uni_add);
-   printf("Wow that area is nice too.\nGive me two numbers");
+   printf("Wow that area is nice too.\nGive me two numbers.\n");
    int number1, number2;
    int return1;
    float return0;
    scanf("%d %d", &number1, &number2);
-   printf("do you want to add[+]/substract[-]/divide[/]/multiply[x] those numbers");
+   printf("do you want to add[+]/substract[-]/divide[/]/multiply[X] those numbers:\n");
    scanf("%s", temp1);
    if(temp1 == "add" || temp1 == "+")
    {
@@ -56,7 +56,7 @@ int main() {
       return0 = dvd(number1, number2);
       printf("The value is %f", return0);
    }
-   else if(temp1 == "multiple" || temp1 == "x");
+   else if(temp1 == "multiple" || temp1 == "X");
    {
       return1 = mpl(number1, number2);
       printf("The value is %d", return1);
