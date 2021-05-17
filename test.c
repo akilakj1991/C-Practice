@@ -15,12 +15,12 @@ char temp1, temp2, temp3, temp4;
 int main() {
    printf("Hello, my Name is Akila Jayawardena and I am from Sri Lanka and 28 years old. I am currently live in New Zealand.\n");
    printf("Please enter your first name and family name?\n");
-   scanf("%[^\n]", name1);
+   scanf("%[^\n]s", name1);
    printf("Hello!! %s.\n", name1);
    printf("How old are you?\n");
    scanf("%d", &age);
    printf("Wow I cannot believe you are %d.\nWhere are you from?\n", age);
-   scanf("%[^\n]", country1);
+   //scanf("%[^\n]", country1);
    /*scanf("%s", country2);
    if(strlen(country2) == 0)
    {
@@ -31,7 +31,7 @@ int main() {
       printf("Wow, %s %s is a beautiful country.\nWhere were you born?\n", country1, country2);
    }*/
    printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country1);
-   scanf("%[^\n]", original_country1);
+   //scanf("%[^\n]", original_country1);
    /*scanf("%s", original_country2);
    if(strlen(original_country2) == 0)
    {
