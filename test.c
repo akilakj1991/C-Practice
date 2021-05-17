@@ -3,8 +3,8 @@
 #include <stdlib.h>
 
 char name1[10], name2[10];
-char country1[40], country2[10];
-char original_country1[40], original_country2[10];
+char country1[], country2[10];
+char original_country1[], original_country2[10];
 char university1[10], university2[10];
 char uni_add[80];
 int age;
