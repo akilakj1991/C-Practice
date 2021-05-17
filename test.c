@@ -35,28 +35,28 @@ int main() {
    fflush(stdin);
    scanf("%[^\n]s", uni_add);
    printf("Wow that area is nice too.\nGive me two numbers.\n");
-   int number1, number2;
-   int number3;
+   fflush(stdin);
+   int number1, number2, number3;
    float number4;
    scanf("%d %d", &number1, &number2);
    printf("do you want to add[+]/substract[-]/divide[/]/multiply[X] those numbers:\n");
    scanf("%s", temp1);
-   if(temp1 == "add" || temp1 == "+")
+   if((temp1 == "add")||( temp1 == '+'))
    {
       number3 = add(number1, number2);
       printf("The value is %d", number3);
    } 
-   else if(temp1 == "substract" || temp1 == "-")
+   else if((temp1 == "substract") || (temp1 == '-'))
    {
       number3 = sub(number1, number2);
       printf("The value is %d", number3);
    }
-   else if(temp1 == "divide" || temp1 == "/")
+   else if((temp1 == "divide") || (temp1 == '/'))
    {
       number4 = dvd(number1, number2);
       printf("The value is %f", number4);
    }
-   else if(temp1 == "multiply" || temp1 == "X");
+   else if((temp1 == "multiply") || (temp1 == 'X'))
    {
       number3 = mpl(number1, number2);
       printf("The value is %d", number3);
