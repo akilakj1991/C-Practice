@@ -20,8 +20,8 @@ int main() {
    printf("How old are you?\n");
    scanf("%d", &age);
    printf("Wow I cannot believe you are %d.\nWhere are you from?\n", age);
-   scanf("%s", country1);
-   scanf("%s", country2);
+   scanf("%[^\n]", country1);
+   /*scanf("%s", country2);
    if(strlen(country2) == 0)
    {
       printf("Wow, %s is a beautiful country.\nWhere were you born?\n", country1);
@@ -29,9 +29,9 @@ int main() {
    else
    {
       printf("Wow, %s %s is a beautiful country.\nWhere were you born?\n", country1, country2);
-   }
-   scanf("%s", original_country1);
-   scanf("%s", original_country2);
+   }*/
+   scanf("%[^\n]", original_country1);
+   /*scanf("%s", original_country2);
    if(strlen(original_country2) == 0)
    {
       printf("Wow, %s is a beautiful country too.\nWhich universty did you study?\n", original_country1);
@@ -39,7 +39,7 @@ int main() {
    else
    {
       printf("Wow, %s %s is a beautiful country too.\nWhich university did you study?\n", original_country1, original_country2);
-   }
+   }*/
    printf("Wow, %s is a beautiful country too.\nWhich universty did you study?\n", original_country1);
    scanf("%s %s", university1, university2);
    printf("Where is %s %s located at?\n", university1, university2);
